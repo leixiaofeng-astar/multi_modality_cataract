@@ -1,6 +1,8 @@
 # multi_modality_cataract
 To develop and evaluate the performances of Deep Learning algorithms in detecting visually significant cataract using retinal, slit view, and diffuse anterior segment photos.
 
+The code is publicly available for verification, while the AI models can be obtained from the corresponding authors upon request.
+
 # Prerequisite
 
 ## Hardware Resource Recommendations
@@ -60,6 +62,13 @@ you will find 3 types of sample images under the folder:
 You can run our models on your image. The supported image file format includes: png, bbmp, jpg, or tiff.
 
 # Prediction
+Note: You need request the 3 AI models as below and put them under the same folder as "main.py":
+	any048_class_model4ResNet18_xgb131-AUC9703.pth 
+	any048_class_model4ResNet34_lr0.0001_2nd-AUC9338-statedict.pth 
+	any048_fold1_class_model4EfficientNet_b3_lr0.0001-AUC9438-statedict.pth 
+
+The models can be requested from the corresponding author of the paper titled "Multi-comparison of Deep Learning Models Based on Different Ocular Imaging Modalities for Detecting Visually Significant Cataracts."
+
 
 ## Usage
 ```
