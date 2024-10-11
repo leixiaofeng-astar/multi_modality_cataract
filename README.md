@@ -63,12 +63,20 @@ You can run our models on your image. The supported image file format includes: 
 
 ## Usage
 ```
-usage: python3 main.py --input DATASET_DIR [--output OUTPUT_DIR] [--threshold THRESHOLD_VALUE] [-h]
+usage: main.py [-h] [--input INPUT_FILEPATH] [--label LABEL_FILE] [--output OUTPUT_FILEPATH] [--threshold THRESHOLD_FLOAT] [--image_type IMAGE_TYPE]
 
-options:
-  --input DATASET_DIR         The input directory for dataset image files, must be specified.
-  --output OUTPUT_DIR         The result output csv file directory, optional, default to *./outputs*.
-  -h                          Show command line options.
+VI CNN
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --input INPUT_FILEPATH
+                        the dataset images folder to be test
+  --label LABEL_FILE    the csv file with ground truth for the images, follow the same format as example file
+  --output OUTPUT_FILEPATH
+                        the destination folder for output csv file, by default with "outputs" folder
+  --threshold THRESHOLD_FLOAT
+                        the threshold for the prediction 1 of the AI model
+  --image_type IMAGE_TYPE
 
 examples:
   git clone https://github.com/SunnyAVT/visually_significant_cataract.git
