@@ -78,19 +78,17 @@ usage: main.py [-h] [--input INPUT_FILEPATH] [--label LABEL_FILE] [--output OUTP
 VI CNN
 
 optional arguments:
-  -h, --help            show this help message and exit
-  --input INPUT_FILEPATH
-                        the dataset images folder to be test
-  --label LABEL_FILE    the csv file with ground truth for the images, follow the same format as example file
-  --output OUTPUT_FILEPATH
-                        the destination folder for output csv file, by default with "outputs" folder
-  --threshold THRESHOLD_FLOAT
-                        the threshold for the prediction 1 of the AI model
+  -h, --help            	show this help message and exit
+  --input INPUT_FILEPATH        the dataset images folder to be test
+  --label LABEL_FILE    	the csv file with ground truth for the images, follow the same format as example file
+  --output OUTPUT_FILEPATH      the destination folder for output csv file, by default with "outputs" folder
+  --threshold THRESHOLD_FLOAT	the threshold for the prediction 1 of the AI model
   --image_type IMAGE_TYPE
 
 examples:
-  git clone https://github.com/SunnyAVT/visually_significant_cataract.git
+  git clone https://github.com/leixiaofeng-astar/multi_modality_cataract
   cd multi_modality_cataract
+  pip install -r requirements.txt
   python3 main.py --image_type fundus --input ./fundus_images/MS26132R_R.png  
   python3 main.py --image_type diffuse --input ./diffuse_images/OS000C33_MS25394.jpg  
   python3 main.py --image_type slitlamp --input ./slitlamp_images/OD000010_MS16616.jpg   
