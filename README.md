@@ -96,7 +96,15 @@ examples:
 ```
 
 ## Result
-The prediction result will be shown as below:
+You can find the results for the three visually significant cataract detection models, based on different ocular imaging modalities, in the "paper-results" folder. The folders are organized by Retinal model, Slit-lamp view model, and Diffuse anterior segment model. 
+```
+	fundus_SIMES_intest_ResNet18_xgboost_AUC_0.9709.csv
+	diffuse_EfficientNet_b3_SIMES_intest_AUC_0.9438.csv
+	slitlamp_ResNet34_SIMES_intest_AUC_0.9338.csv
+```
+The results on the sample images (fundus_images, diffuse_images, slitlamp_images) align with the predictions in the result files, validating that the outputs correspond accurately to each model as we stated in the paper.
+
+The prediction outout after you run the example commands is as below:
 ```
 python3 main.py --image_type fundus --input ./fundus_images/MS26132R_R.png 
 /data/xiaofeng/retinal_cateract/cataract_paper/paper-env/lib/python3.8/site-packages/xgboost/compat.py:31: FutureWarning: pandas.Int64Index is deprecated and will be removed from pandas in a future version. Use pandas.Index with the appropriate dtype instead.
